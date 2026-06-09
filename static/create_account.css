@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background-image: url(header-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0px;
+    gap: 15px;
+}
+
+
+
+.text-group {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+
+.text-group p {
+    display: flex;
+    float: right;
+}
+
+
+.line {
+    width: 100%;
+    height: 3px;
+    background: black;
+    margin: 0 auto;
+}
+
+ul li {
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+ul li a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding-bottom: 10px;
+}
+
+
+/*SIDEBAR MENU AND SIDEBAR TOGGLE*/
+.sidebar-container {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    transition: all 0.3s ease;
+
+}
+
+.sidebar {
+    background-color: white;
+    background-image: url('caropacity.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 15%;
+    height: 100dvh;
+    border: solid 2px;
+    margin: 20px 0 0 0;
+    padding-top: 5px;
+    box-shadow: 0 0 15px yellow;
+    transition: margin-left 0.3s ease;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.burger-button {
+    background-color: transparent;
+    margin: 15px 0px 0px 10px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 30px;
+    left: 15%;
+    /* same as sidebar width */
+    top: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+.burger-button:hover {
+    background-color: #9bbeb3;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* When sidebar is hidden */
+.sidebar.hidden {
+    margin-left: -15%;
+}
+
+.burger-button.shifted {
+    left: 10px;
+    /* move left when sidebar is hidden */
+}
+
+/*LOGO FOR MENU BAR*/
+.dashboard-img,
+.report-img,
+.parking-img,
+.ticket-img,
+.logout-img,
+.admin-img,
+.new-user-img {
+    height: 27px;
+    width: 25px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+
+iframe {
+    flex: 1;
+    border: none;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}

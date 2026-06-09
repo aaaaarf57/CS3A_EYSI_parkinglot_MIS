@@ -1,0 +1,57 @@
+/* =====================================
+   UNIVERSAL CONTENT LAYOUT (Eysi MIS)
+   ===================================== */
+
+/* Base layout for all pages */
+.main-content {
+  margin-left: 30px;       /* space from sidebar */      
+  margin-right: 0px;      /* even spacing on the right */
+  margin-top: 0px;        /* spacing from header */
+  margin-bottom: 30px;     /* bottom breathing room */
+  padding: 0;              /* no inner padding (content-specific) */
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #fff !important;
+}
+
+/* =======================
+   RESPONSIVE ADJUSTMENTS
+   ======================= */
+
+/* Large Tablets and small laptops */
+@media (max-width: 1200px) {
+  .main-content {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .main-content {
+    margin-left: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 480px) {
+  .main-content {
+    margin: 10px;
+  }
+}
